@@ -20,3 +20,34 @@ export const personal = {
   focusAreas: ["ML", "DS", "DA", "AI Engineering"],
   openToWork: true,
 };
+export const certifications = [
+  {
+    title: "Oracle Certified Data Science Professional",
+    issuer: "Oracle",
+    date: "2025",
+    verifyUrl: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7A41CCE5B280E5236084E8A1BB5103281505659DD3ED64E986B24EB60C153533",
+    tags: ["AI","Oracle Cloud","ML","OCI Data Science"],
+  },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    issuer: "Oracle",
+    date: "2025",
+    verifyUrl: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D701E77E14A5C1C86A4AFC1A7F13A8E3E6527AF73D7D134AC9F3C88897284D73",
+    tags: ["AI","Oracle Cloud","ML"],
+  },
+  {
+    title: "NPTEL Big Data Computing",
+    issuer: "Swayam NPTEL",
+    date: "2025",
+    verifyUrl: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL25CS131S116690253210494214",
+    tags: ["Big Data","Big Data Analytics","Apache Spark","Hadoop"],
+  },
+   {
+    title: "NPTEL Edge Computing",
+    issuer: "Swayam NPTEL",
+    date: "2025",
+    verifyUrl: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL25CS28S34060018401276037",
+    tags: ["Edge Computing","Cloud Computing"],
+  },
+];
+
