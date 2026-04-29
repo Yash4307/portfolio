@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { personal } from "@/lib/personal";
 import { projects } from "@/lib/projects";
+import { certifications } from "@/lib/personal";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 16 },
@@ -155,6 +156,52 @@ export default function About() {
           ))}
         </div>
       </motion.section>
+
+      {/* Certifications */}
+<motion.section {...fadeUp(0.22)} className="mb-14">
+  <div className="flex items-center gap-4 mb-6">
+    <span className="text-[11px] uppercase tracking-[0.2em] text-acid">
+      certifications
+    </span>
+    <div className="flex-1 h-px bg-[#1e2a36]" />
+  </div>
+
+  <div className="flex flex-col gap-3">
+    {certifications.map((cert) => (
+      <div
+        key={cert.title}
+        className="border border-[#1e2a36] bg-card rounded-sm p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:border-cyan/30 transition-colors"
+      >
+        <div>
+          <p className="font-display font-bold text-sm text-text mb-0.5">
+            {cert.title}
+          </p>
+          <p className="text-[11px] text-dim">
+            {cert.issuer} · {cert.date}
+          </p>
+          <div className="flex flex-wrap gap-1.5 mt-2">
+            {cert.tags.map((tag) => (
+              <span
+                key={tag}
+                className="text-[11px] text-cyan bg-cyan/5 border border-cyan/20 px-2 py-0.5 rounded-sm"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+        
+          href={cert.verifyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[11px] uppercase tracking-widest text-acid border border-acid/30 bg-acid/5 px-3 py-1.5 rounded-sm hover:bg-acid/10 transition-colors shrink-0 text-center"
+        >
+          → verify
+        </a>
+      </div>
+    ))}
+  </div>
+</motion.section>
 
       {/* Contact CTA */}
       <motion.section {...fadeUp(0.25)}>
