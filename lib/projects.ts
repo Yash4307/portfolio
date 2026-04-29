@@ -25,8 +25,8 @@ export const projects: Project[] = [
     ],
     tags: ["Python", "Flask", "Groq API", "AI Security", "Prompt Engineering"],
     status: "live",
-    liveUrl: "https://your-safeprompt-url.render.com", // <-- update this
-    githubUrl: "https://github.com/yourusername/safeprompt-scanner", // <-- update this
+    liveUrl: "https://safeprompt-scanner.onrender.com", // <-- update this
+    githubUrl: "https://github.com/Yash4307/safeprompt-scanner", // <-- update this
     platform: "Render",
   },
   {
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     ],
     tags: ["Python", "LLMs", "RAG", "NLP", "HuggingFace"],
     status: "live",
-    liveUrl: "https://huggingface.co/spaces/yourusername/resume-analyzer", // <-- update this
+    liveUrl: "https://huggingface.co/spaces/yash4306/smart-resume-ai", // <-- update this
     githubUrl: "https://github.com/yourusername/resume-analyzer", // <-- update this
     platform: "HuggingFace Spaces",
   },
