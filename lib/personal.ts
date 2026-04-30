@@ -2,7 +2,7 @@ export const personal = {
   name: "Yash Gawade",           // <-- update
   role: "ML & AI Developer",
   location: "Pune, India",
-  email: "gawadeyash016@gmail.com",      // <-- update
+  email: "gawadeyash017@gmail.com",      // <-- update
   github: "https://github.com/Yash4307",   // <-- update
   linkedin: "https://linkedin.com/in/yash-gawade-98a94a26b/", // <-- update
   resume: "https://drive.google.com/file/d/1i8GiuX_nihIjNAGdVGHq4f4IB7a18p7D/preview?usp=drive_link",       // drop your PDF in /public/resume.pdf
