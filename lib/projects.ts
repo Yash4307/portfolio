@@ -45,5 +45,23 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/yourusername/resume-analyzer", // <-- update this
     platform: "HuggingFace Spaces",
   },
-  // Add future projects here — they'll automatically appear on the site
+  {
+  id: "movierater",
+  title: "MovieRater",
+  shortDesc:
+    "Production-ready movie discovery and review platform with social feeds, watchlists, role-based access, and real-time AJAX search — powered by Flask and MySQL.",
+  longDesc: [
+    "Built end-to-end full-stack application with Python,Flask, SQLAlchemy, MySQL, JavaScript, HTML/CSS — structured for scalability with migration-ready DB workflows and connection pooling.",
+    "Implemented role-based access control with separate admin dashboard and user management actions.",
+    "Built social features including community feed, user profiles, review likes/hearts, and watchlist management.",
+    "Added real-time UX with AJAX live search suggestions and dynamic client-side updates.",
+    "Integrated IMDb/OMDb and TMDB APIs for movie metadata, posters, ratings, and trending content.",
+    "Deployed on Render with environment-based secrets and production-ready database configuration.",
+  ],
+  tags: ["Python", "Flask", "SQLAlchemy", "MySQL", "JavaScript", "AJAX", "OMDb API", "TMDB"],
+  status: "live",
+  liveUrl: "https://movie-rater-3y6w.onrender.com",   // ← replace with your Render URL
+  githubUrl: "https://github.com/Yash4307/Movie-Rater", // ← replace with your actual repo name
+  platform: "Render",
+},
 ];
