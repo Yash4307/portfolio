@@ -5,7 +5,7 @@ export const personal = {
   email: "gawadeyash017@gmail.com",      // <-- update
   github: "https://github.com/Yash4307",   // <-- update
   linkedin: "https://linkedin.com/in/yash-gawade-98a94a26b/", // <-- update
-  resume: "https://drive.google.com/file/d/1i8GiuX_nihIjNAGdVGHq4f4IB7a18p7D/preview?usp=drive_link",       // drop your PDF in /public/resume.pdf
+  resume: "https://drive.google.com/file/d/1RyFmKAjsIrE5kCo_tdlQNPiwhTpKDDwr/preview?usp=drive_link",       // drop your PDF in /public/resume.pdf
 
   tagline: "Building intelligent systems that actually work.",
   bio: "Python developer working at the intersection of machine learning, data science, and AI security. I build LLM-powered tools that are both capable and defensible — understanding not just how to use AI, but how it can be exploited and how to stop that.",
