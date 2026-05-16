@@ -42,7 +42,7 @@ export const projects: Project[] = [
     tags: ["Python", "LLMs", "RAG", "NLP", "HuggingFace"],
     status: "live",
     liveUrl: "https://huggingface.co/spaces/yash4306/smart-resume-ai", // <-- update this
-    githubUrl: "https://github.com/yourusername/resume-analyzer", // <-- update this
+    githubUrl: "https://github.com/Yash4307/smartresume-ai", // <-- update this
     platform: "HuggingFace Spaces",
   },
   {
