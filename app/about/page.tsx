@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { personal, certifications } from "@/lib/personal";
 import { projects } from "@/lib/projects";
+import { personal, certifications, techStack, hackathons } from "@/lib/personal";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 16 },
@@ -31,6 +31,13 @@ const skillCategories = [
     label: "Security",
     items: ["AI Security", "Prompt Injection Defense", "Input Validation", "Defensive Engineering"],
   },
+];
+
+const stackGroups = [
+  { label: "Languages & Markup", keys: ["Python", "JavaScript", "HTML5", "CSS3"] },
+  { label: "Databases",          keys: ["MySQL", "PostgreSQL"] },
+  { label: "Tools & Frameworks", keys: ["Flask", "Git", "GitHub"] },
+  { label: "AI Tools & APIs",    keys: ["ChatGPT", "Gemini", "Claude", "Groq API", "Google AI Studio"] },
 ];
 
 export default function About() {
@@ -91,6 +98,35 @@ export default function About() {
             </div>
           ))}
         </div>
+      </motion.section>
+
+      {/* Tech Stack */}
+      <motion.section {...fadeUp(0.13)} className="mb-14">
+        <div className="flex items-center gap-4 mb-6">
+          <span className="text-[11px] uppercase tracking-[0.2em] text-acid">tech stack</span>
+          <div className="flex-1 h-px bg-[#1e2a36]" />
+        </div>
+        {stackGroups.map(({ label, keys }) => (
+          <div key={label} className="mb-6">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-dim/50 mb-3">{label}</p>
+            <div className="flex flex-wrap gap-3">
+              {techStack
+                .filter((t) => keys.includes(t.name))
+                .map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center gap-2.5 bg-card border border-[#1e2a36] px-3 py-2.5 rounded-sm hover:border-acid/30 hover:bg-acid/5 transition-all group"
+                  >
+                    <i className={`${tech.icon} text-2xl group-hover:scale-110 transition-transform`} />
+                    <div>
+                      <p className="text-[12px] text-text font-medium leading-none mb-0.5">{tech.name}</p>
+                      <p className="text-[10px] text-dim/60 uppercase tracking-wide leading-none">{tech.category}</p>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </div>
+        ))}
       </motion.section>
 
       {/* Skills */}
@@ -202,6 +238,63 @@ export default function About() {
                 >
                   → verify
                 </a>
+              )}
+            </div>
+          ))}
+        </div>
+      </motion.section>
+
+      {/* Hackathons */}
+      <motion.section {...fadeUp(0.24)} className="mb-14">
+        <div className="flex items-center gap-4 mb-6">
+          <span className="text-[11px] uppercase tracking-[0.2em] text-acid">hackathons</span>
+          <div className="flex-1 h-px bg-[#1e2a36]" />
+        </div>
+        <div className="flex flex-col gap-4">
+          {hackathons.map((h) => (
+            <div key={h.name} className="border border-[#1e2a36] bg-card rounded-sm p-5 hover:border-cyan/30 transition-colors">
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-3">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <p className="font-display font-bold text-sm text-text">{h.project}</p>
+                    <span className="text-[10px] uppercase tracking-widest text-dim border border-[#1e2a36] px-2 py-0.5 rounded-sm">
+                      {h.type}
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-acid">{h.name} · {h.date}</p>
+                </div>
+                <span className={`text-[10px] uppercase tracking-widest px-2 py-1 rounded-sm border shrink-0 self-start ${
+                  h.result === "Qualified Round 1"
+                    ? "text-acid border-acid/30 bg-acid/5"
+                    : "text-cyan border-cyan/30 bg-cyan/5"
+                }`}>
+                  {h.result}
+                </span>
+              </div>
+              <p className="text-[11px] text-dim/60 uppercase tracking-widest mb-2">Theme: {h.theme}</p>
+              <p className="text-[13px] text-dim leading-relaxed mb-3">{h.description}</p>
+              <div className="flex flex-wrap gap-1.5 mb-1">
+                {h.skills.map((s) => (
+                  <span key={s} className="text-[11px] text-cyan bg-cyan/5 border border-cyan/20 px-2 py-0.5 rounded-sm">
+                    {s}
+                  </span>
+                ))}
+              </div>
+              {(h.liveUrl || h.githubUrl) && (
+                <div className="flex gap-4 pt-3 border-t border-[#1e2a36] mt-3">
+                  {h.liveUrl && (
+                    <a href={h.liveUrl} target="_blank" rel="noopener noreferrer"
+                      className="text-[11px] uppercase tracking-widest text-acid hover:text-text transition-colors">
+                      → live demo
+                    </a>
+                  )}
+                  {h.githubUrl && (
+                    <a href={h.githubUrl} target="_blank" rel="noopener noreferrer"
+                      className="text-[11px] uppercase tracking-widest text-dim hover:text-text transition-colors">
+                      → github
+                    </a>
+                  )}
+                </div>
               )}
             </div>
           ))}
