@@ -67,7 +67,7 @@ export const techStack = [
   { name: "Claude",           category: "AI Tool",         icon: "https://cdn.simpleicons.org/anthropic/d97706" }, 
   { name: "Google AI Studio", category: "AI API",          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" },
   { name: "ChatGPT",          category: "AI Tool",         icon: "https://api.iconify.design/logos:openai.svg" }, 
-  { name: "Groq API",         category: "AI API",          icon: "https://api.iconify.design/simple-icons:groq.svg?color=%23f55036" },
+  { name: "Groq API",         category: "AI API",          icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3Qgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiB4PSIzIiB5PSIzIiBmaWxsPSIjZjU1MDM2IiByeD0iMiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik04IDdoOHYySDh6bTAgNGg4djJIOHptMCA0aDV2Mkg4eiIvPjwvc3ZnPg==" },
 ];
 
 export const hackathons = [
