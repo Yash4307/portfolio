@@ -54,7 +54,7 @@ export const certifications = [
 ];
 
 export const techStack = [
-  { name: "Python",           category: "Language",        icon: "devicon-python-plain" },
+  { name: "Python",           category: "Language",        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" },
   { name: "JavaScript",       category: "Language",        icon: "devicon-javascript-plain colored" },
   { name: "HTML5",            category: "Markup",          icon: "devicon-html5-plain colored" },
   { name: "CSS3",             category: "Styling",         icon: "devicon-css3-plain colored" },
@@ -63,10 +63,10 @@ export const techStack = [
   { name: "Git",              category: "Version Control", icon: "devicon-git-plain colored" },
   { name: "GitHub",           category: "Hosting",         icon: "devicon-github-original" },
   { name: "Flask",            category: "Framework",       icon: "devicon-flask-original" },
-  { name: "ChatGPT",          category: "AI Tool",         icon: "https://cdn.simpleicons.org/openai/7437F9" },
+  { name: "ChatGPT",          category: "AI Tool",         icon: "https://cdn.simpleicons.org/openai/ffffff" },
   { name: "Gemini",           category: "AI Tool",         icon: "https://cdn.simpleicons.org/googlegemini/8E75EC" },
   { name: "Claude",           category: "AI Tool",         icon: "https://cdn.simpleicons.org/anthropic/CC9B7A" },
-  { name: "Groq API",         category: "AI API",          icon: "https://cdn.simpleicons.org/groq/F55036" },
+  { name: "Groq API",         category: "AI API",          icon: "https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/groq.svg" },
   { name: "Google AI Studio", category: "AI API",          icon: "https://cdn.simpleicons.org/google/4285F4" },
 ];
 
