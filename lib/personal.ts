@@ -63,11 +63,11 @@ export const techStack = [
   { name: "Git",              category: "Version Control", icon: "devicon-git-plain colored" },
   { name: "GitHub",           category: "Hosting",         icon: "devicon-github-original" },
   { name: "Flask",            category: "Framework",       icon: "devicon-flask-original" },
-  { name: "ChatGPT",          category: "AI Tool",         icon: "https://cdn.simpleicons.org/openai/10a37f" }, 
   { name: "Gemini",           category: "AI Tool",         icon: "https://cdn.simpleicons.org/googlegemini/8e75ec" }, 
   { name: "Claude",           category: "AI Tool",         icon: "https://cdn.simpleicons.org/anthropic/d97706" }, 
-  { name: "Groq API",         category: "AI API",          icon: "https://cdn.simpleicons.org/groq/f55036" }, 
   { name: "Google AI Studio", category: "AI API",          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg" },
+  { name: "ChatGPT",          category: "AI Tool",         icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzEwYTM3ZiI+PHBhdGggZD0iTTIyLjI4MTkgOS44MjExYTUuOTg0NyA1Ljk4NDcgMCAwIDAtLjUxNTctNC45MTA4IDYuMDQ2MiA2LjA0NjIgMCAwIDAtNi41MDk4LTIuOUE2LjA2NTEgNi4wNjUxIDAgMCAwIDQuOTgwNyA0LjE4MThhNS45ODQ3IDUuOTg0NyAwIDAgMC0zLjk5NzcgMi45IDYuMDQ2MiA2LjA0NjIgMCAwIDAgLjc0MjcgNy4wOTY2IDUuOTggNS45OCAwIDAgMCAuNTExIDQuOTEwNyA2LjA1MSA2LjA1MSAwIDAgMCA2LjUxNDYgMi45MDAxQTUuOTg0NyA1Ljk4NDcgMCAwIDAgMTMuMjU5OSAyNGE2LjA1NTcgNi4wNTU3IDAgMCAwIDUuNzcxOC00LjIwNTggNS45ODk0IDUuOTg5NCAwIDAgMCAzLjk5NzctMi45MDAxIDYuMDU1NyA2LjA1NTcgMCAwIDAtLjc0NzUtNy4wNzN6TTEyIDE1LjM0NDRhMy4zNDQ0IDMuMzQ0NCAwIDEgMSAwLTYuNjg4OCAzLjM0NDQgMy4zNDQ0IDAgMCAxIDAgNi42ODg4eiIvPjwvc3ZnPg==" }, 
+  { name: "Groq API",         category: "AI API",          icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3Qgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiB4PSIzIiB5PSIzIiBmaWxsPSIjZjU1MDM2IiByeD0iMiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik04IDdoOHYySDh6bTAgNGg4djJIOHptMCA0aDV2Mkg4eiIvPjwvc3ZnPg==" },
 ];
 
 export const hackathons = [
