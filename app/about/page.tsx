@@ -118,8 +118,7 @@ export default function About() {
                     className="flex items-center gap-2.5 bg-card border border-[#1e2a36] px-3 py-2.5 rounded-sm hover:border-acid/30 hover:bg-acid/5 transition-all group"
                   >
                     <div className="flex items-center justify-center w-6 h-6">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      {tech.icon.startsWith('http') || tech.icon.startsWith('data:') ? (
+                      {tech.icon.startsWith('http') ? (
                         <img 
                           src={tech.icon} 
                           alt={tech.name} 
