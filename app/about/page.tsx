@@ -117,7 +117,17 @@ export default function About() {
                     key={tech.name}
                     className="flex items-center gap-2.5 bg-card border border-[#1e2a36] px-3 py-2.5 rounded-sm hover:border-acid/30 hover:bg-acid/5 transition-all group"
                   >
-                    <i className={`${tech.icon} text-2xl group-hover:scale-110 transition-transform`} />
+                    <div className="flex items-center justify-center w-6 h-6">
+                      {tech.icon.startsWith('http') ? (
+                        <img 
+                          src={tech.icon} 
+                          alt={tech.name} 
+                          className="w-5 h-5 object-contain group-hover:scale-110 transition-transform" 
+                        />
+                      ) : (
+                        <i className={`${tech.icon} text-2xl group-hover:scale-110 transition-transform inline-block`} />
+                      )}
+                    </div>
                     <div>
                       <p className="text-[12px] text-text font-medium leading-none mb-0.5">{tech.name}</p>
                       <p className="text-[10px] text-dim/60 uppercase tracking-wide leading-none">{tech.category}</p>
